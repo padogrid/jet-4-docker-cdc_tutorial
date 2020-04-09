@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+SCRIPT_DIR="$(cd -P -- "$(dirname -- "$0")" && pwd -P)"
+. $SCRIPT_DIR/.addonenv.sh
+
+EXECUTABLE="`basename $0`"
+REPO_NAME=hazelcast-desktop
+
+if [ "$HELP" == "true" ]; then
+   echo "Usage:"
+   echo "   ./$EXECUTABLE [-clean] [-?]"
+   echo ""
+   echo "   Builds the CDC tutorial jar file that can be submitted to Jet in the target directory as follows:"
+   echo ""
+   echo "      $APP_DIR/target/cdc-tutorial-1.0-SNAPSHOT.jar"
+   echo ""
+   echo "Default: ./$EXECUTABLE"
+   echo ""
+   exit
+fi
+
+# Checkout hazelcast-desktop
+pushd $APP_DIR > /dev/null
+mvn clean package
+popd > /dev/null
+
+#
+# Display build information
+#
+echo ""
+echo "Workspace: $HAZELCAST_ADDON_WORKSPACE"
+echo ""
+echo "Build complete"
+echo ""
+echo "   $APP_DIR/target/cdc-tutorial-1.0-SNAPSHOT.jar"
+echo ""
+echo "To submit the jar file to Jet run the 'jet' executable as follows:"
+echo ""
+echo "   cd $APP_DIR"
+echo "   jet --addresses localhost:6701 submit target/cdc-tutorial-1.0-SNAPSHOT.jar"
+echo ""

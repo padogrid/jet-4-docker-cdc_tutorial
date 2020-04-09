@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+SCRIPT_DIR="$(cd -P -- "$(dirname -- "$0")" && pwd -P)"
+. $SCRIPT_DIR/.addonenv.sh
+
+"$JAVA" $JAVA_OPTS org.example.CacheRead

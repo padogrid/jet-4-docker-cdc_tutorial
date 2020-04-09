@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+docker stop mysqlterm mysql
+docker container prune -f
+

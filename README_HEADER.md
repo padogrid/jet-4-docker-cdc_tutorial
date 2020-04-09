@@ -1,0 +1,1 @@
+The `cdc_tutorial` bundle wraps the CDC tutorial available from the Hazelcast site https://jet-start.sh/docs/tutorials/cdc.
