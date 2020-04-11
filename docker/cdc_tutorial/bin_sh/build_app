@@ -27,7 +27,7 @@ popd > /dev/null
 # Display build information
 #
 echo ""
-echo "Workspace: $HAZELCAST_ADDON_WORKSPACE"
+echo "Workspace: $PADOGRID_WORKSPACE"
 echo ""
 echo "Build complete"
 echo ""

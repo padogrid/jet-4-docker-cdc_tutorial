@@ -5,7 +5,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>org.hazelcast.addon</groupId>
+	<groupId>padogrid.addon</groupId>
 	<artifactId>jet-4-docker-cdc_tutorial</artifactId>
 	<packaging>pom</packaging>
 	<name>jet-4-docker-cdc_tutorial</name>
