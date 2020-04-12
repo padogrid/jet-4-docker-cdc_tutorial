@@ -75,7 +75,7 @@ create_docker -cluster cdc_jet -host host.docker.internal
 
 ```console
 cd_docker cdc_jet
-cp ../cdc_tutorial/target/cdc-tutorial-1.0-SNAPSHOT.jar hazelcast-addon/plugins/
+cp ../cdc_tutorial/target/cdc_tutorial-1.0.0.jar padogrid/plugins/
 ```
 
 Start the cluster.
@@ -95,13 +95,13 @@ The job jar we have built takes the host IP address as the optional argument. If
 cd_docker cdc_tutorial
 
 # For host IP: localhost (if running on host machine)
-jet --addresses localhost:6701 submit target/cdc-tutorial-1.0-SNAPSHOT.jar
+jet --addresses localhost:6701 submit target/cdc_tutorial-1.0.0.jar
 
 # For Docker Desktop: host.docker.internal
-jet --addresses localhost:6701 submit target/cdc-tutorial-1.0-SNAPSHOT.jar host.docker.internal
+jet --addresses localhost:6701 submit target/cdc_tutorial-1.0.0.jar host.docker.internal
 
 # For others:
-jet --addresses localhost:6701 submit target/cdc-tutorial-1.0-SNAPSHOT.jar <host_ip>
+jet --addresses localhost:6701 submit target/cdc_tutorial-1.0.0.jar <host_ip>
 ```
 
 Upon submitting the connector, the `customers` table records will be populated in the `customers` map. You can view the `customers` map by running the `read_cache` script.
