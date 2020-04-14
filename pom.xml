@@ -6,9 +6,9 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>padogrid.addon</groupId>
-	<artifactId>jet-4-docker-cdc_tutorial</artifactId>
+	<artifactId>bundle-jet-4-docker-cdc_tutorial</artifactId>
 	<packaging>pom</packaging>
-	<name>jet-4-docker-cdc_tutorial</name>
+        <name>${project.artifactId}</name>
 	<version>1.0.0</version>
 	<description>Bundle that wraps the CDC tutorial available from the Hazelcast site https://jet-start.sh/docs/tutorials/cdc.</description>
 

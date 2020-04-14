@@ -5,7 +5,7 @@ The `cdc_tutorial` bundle wraps the CDC tutorial available from the Hazelcast si
 ## Installing Bundle
 
 ```console
-install_bundle -download jet-4-docker-cdc_tutorial
+install_bundle -download bundle-jet-4-docker-cdc_tutor
 ```
 
 ## Use Case
