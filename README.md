@@ -4,6 +4,8 @@ The `cdc_tutorial` bundle wraps the CDC tutorial available from the Hazelcast si
 
 ## Installing Bundle
 
+![PadoGrid](https://github.com/padogrid/padogrid/raw/develop/images/padogrid-3d-16x16.png) [*Driven by PadoGrid*](https://github.com/padogrid)
+
 ```console
 install_bundle -download bundle-jet-4-docker-cdc_tutorial
 ```
