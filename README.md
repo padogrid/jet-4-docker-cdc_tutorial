@@ -71,7 +71,7 @@ The `create_docker` command automatically selects a host IP address but it may n
 If you are running Docker Desktop then you can specify the `-host` option with `host.docker.internal`, which resolves to the internal IP address used by the host. Otherwise, specify the IP address that the Docker containers have access to.
 
 ```console
-create_docker -cluster cdc_jet -host host.docker.internal
+create_docker -product jet -cluster cdc_jet -host host.docker.internal
 ```
 
 :exclamation: The Jet's `slf4j` library might not be compatible with the version that the tutorial build packaged in the `cdc-tutorial-1.0-SNAPSHOT.jar` file. To avoid this problem, let's copy the jar file in the Jet cluster `plugins` directory.
