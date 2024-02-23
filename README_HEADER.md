@@ -1,1 +1,1 @@
-The `cdc_tutorial` bundle wraps the CDC tutorial available from the Hazelcast site https://jet-start.sh/docs/tutorials/cdc.
+‼️  **Deprecated.** *As of PadoGrid v1.0.0, Jet 3.x and Jet 4.x are no longer supported. This bundle runs only on PadoGrid v0.9.x.* The `cdc_tutorial` bundle wraps the CDC tutorial available from the Hazelcast site https://jet-start.sh/docs/tutorials/cdc.
